@@ -1,0 +1,63 @@
+CODE:
+    Main:
+        - project.cpp
+
+    Class Utility Methods:
+        - datasetPreparation_utils.h
+
+    Class BoundingBox:
+        - BoundingBox.h
+        - BoundingBox.cpp
+
+    Class BoatImage:
+        - BoatImage.h
+        - BoatImage.cpp
+
+    Class CombinedModel:
+        - CombinedModel.h
+        - CombinedModel.cpp
+
+DIRECTORIES:
+    models: contains the .xml of the models used during the test
+    Cascade: I created it in case the user would like to perform the training of it's cascade classifier (that will be saved on it's sub-directory called "data")
+    SVM: contains the subdirectories that will contains the training set (positive and negative in order to train an SVM)
+    
+
+
+TO DO:
+Open a terminal in the directory and do the following operation:
+1) cmake .
+2) make all
+3) ./Project   
+
+
+
+EXECUTION:
+The program is composed by a Menù:
+ 1- Create the dataset for the training of the cascade of Classifiers (Not necessary because the project already contains the .xml of cascade)
+ 2- Create Dataset For SVM training and then trained it (Not necessary because the project already contains the .xml of the svm trained)
+ 3- Test the model on the Test Set
+
+
+During the execution The user can choose one of the 3 options of execution and He will be asked to insert some paths (below I will report some examples that I used):
+ Task 1: -Insert the Path of the directory with the training Images:
+          Example: /home/luca/Scrivania/final/FINAL_DATASET/TRAINING_DATASET/IMAGES
+         -Insert the Path of the directory with the training labels:
+          Example: /home/luca/Scrivania/final/FINAL_DATASET/TRAINING_DATASET/LABELS_TXT
+
+ Task 2: -Insert the Path of the directory with the training Images:
+          Example: /home/luca/Scrivania/final/FINAL_DATASET/TRAINING_DATASET/IMAGES
+
+ Task 3: -Insert the Path of the directory with the Test Images:
+          Example: /home/luca/Scrivania/final/FINAL_DATASET/TEST_DATASET/venice
+         -Insert the Path of the directory with the Test labels:
+          Example: /home/luca/Scrivania/final/FINAL_DATASET/TEST_DATASET/venice_labels_txt
+
+
+
+
+MESSAGES:
+- If the Paths inserted are wrong there will be a message "Wrong Paths inserted".
+
+
+I used CLion on Linux Mint to write the code for this homework.
