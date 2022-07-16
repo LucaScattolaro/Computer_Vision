@@ -1,0 +1,18 @@
+-lab2.cpp
+-CMakeLists.txt
+
+Open a terminal in the directory and do the following operation:
+1) cmake .
+2) make all
+3) ./Lab2 data/checkerboard_images data/test_image.png
+
+The program uses 2 command line arguments (argv[1] and argv[2]) to get:
+-argv[1]: Path of the folder containing the images regarding the checkerboard ( data/checkerboard_images )
+-argv[2]: Path of the test image (data/test_image.png)
+
+If there will not be 2 command line arguments there will be considered the following paths as default:
+../data/checkerboard_images/*.png 
+../data/test_image.png
+
+
+I used CLion on Linux Mint to write the code for this homework.
