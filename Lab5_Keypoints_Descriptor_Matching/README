@@ -1,0 +1,33 @@
+-lab5.cpp
+-panoramic_utils.h
+-panoramicImage.h
+-panoramicImage.cpp
+-CMakeLists.txt
+
+Open a terminal in the directory and do the following operation:
+1) cmake .
+2) make all
+3) ./Lab5 datasets/data    
+
+The program uses 1 command line argument (argv[1]) to get:
+the Path of the folder containing the images (for example: datasets/dolomites ).
+
+If there will not be 1 command line arguments there will be considered the following path as default:
+../datasets/data
+
+EXECUTION:
+The user has to insert some values during the execution:
+-Insert the value of the angle
+   (Dolomites: 27)
+   (others: 33)
+-Insert the ratio value to choose the good matches
+
+MESSAGES:
+- If the ratio inserted is too small (there are no good_matches between 2 images) the program will finish with the message:
+  "Ratio choosen it's too small...Please re-run the code using a bigger value"
+- If the path passed as argument or the one used as default is not correct the program will finish withe the message:
+  "The Path used is worng!"
+
+
+
+I used CLion on Linux Mint to write the code for this homework.
