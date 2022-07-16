@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( Lab3 )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( Lab3 lab3.cpp filter.cpp filter.h)
+target_link_libraries( Lab3 ${OpenCV_LIBS} )

@@ -1,0 +1,27 @@
+-lab3.cpp
+-filter.h
+-filter.cpp
+-CMakeLists.txt
+
+Open a terminal in the directory and do the following operation:
+1) cmake .
+2) make all
+3) ./Lab3 data
+
+The program uses 1 command line argument (argv[1]) to get:
+the Path of the folder containing the images (for example: data ).
+
+If there will not be 1 command line arguments there will be considered the following path as default:
+../data
+
+There is a menu to get a user friendly execution:
+    - choose 1 image among the list shown
+    - choose which channel among HSV to equalize
+    - choose how you want to see the equalization results
+    - choose the type of filter to apply
+        When you finish with one of them you can test also the other until you want
+        (To finish press 0, or a not valid menu number)
+
+
+
+I used CLion on Linux Mint to write the code for this homework.
